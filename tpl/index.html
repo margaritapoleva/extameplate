@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+{before_html}
+{Head}<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <title>{title}</title>
+        <meta property="og:title" content="{site-title}" />
+        <meta property="og:image" content="{page-images-1}"/>
+        {meta_keywords}
+        <meta property="og:description" content="{site-title}">
+        <meta name="description" content="{site-title}">
+        
+
+
+
+        {EndHead}
+        {Header}
+        <link rel="shortcut icon" href="{logo_img}" type="image/x-icon">
+        <link rel="stylesheet" href="{style-name}">
+
+
+
+        {before_head}
+
+        <style>
+
+{random_style}
+
+   </style>
+
+
+
+        </head>
+
+        <body>
+
+
+
+
+
+        <header>
+            <div class="top-section-bg">
+                <div class="mainbox top-section">
+                    <div class="top-sect-logoblock">
+                        <a class="top-sect-logo" href="./">
+                            <img src="{logo_img}"  alt="">
+                            <h3>{site-title}</h3>
+                        </a>
+                    </div>
+                    <div class="top-section-navigation">
+                        <a class="tsn-link" href="./"> 
+                            {home_page}
+                        </a>
+                        <label class="tsn-downmenu">
+                            <input type="checkbox" id="target-drop-example">
+                            <span class="tsn-downmenu-btn">{menu-type-title}</span>
+                            <ul class="tsn-downmenu-list">
+                                {startContent-1}<li class="tsn-downmenu-item">
+                                    <a target="_blank" href="{page-link-1}">{page-title-1}</a>
+                                </li>{endContent-1}
+                                {startContent-2}<li class="tsn-downmenu-item">
+                                    <a target="_blank" href="{page-link-2}">{page-title-2}</a>
+                                </li>{endContent-2}
+                                {startContent-3}<li class="tsn-downmenu-item">
+                                    <a target="_blank" href="{page-link-3}">{page-title-3}</a>
+                                </li>{endContent-3}
+                                {startContent-4}<li class="tsn-downmenu-item">
+                                    <a target="_blank" href="{page-link-4}">{page-title-4}</a>
+                                </li>{endContent-4}
+                            </ul>
+                            <label for="target-drop-example" class="tsn-downmenu-close"></label>
+                        </label> 
+                        <a class="tsn-link" href="./#upside"> 
+                            {benefit-title}
+                        </a>
+                        <a class="tsn-link" href="./{aboutus_link}"> 
+                            {aboutus_title}
+                        </a>
+                        <a class="tsn-link" href="{contacts_link}">
+                            {contacts_title}
+                        </a>
+                    </div>
+                </div>
+            </div>
+           
+
+            <div class="big-clip-banner">
+                <div class="big-clip-cont">
+                    <div class="big-clip-img first-bci">
+                        <img src="bg/{landing_img_1}" alt="">
+                    </div>
+                    <div class="big-clip-img second-bci">
+                        <img src="bg/{landing_img_2}" alt="">
+                    </div>
+                </div>
+                <div class="bcb-header mainbox">
+                    <div class="bcb-header-title">
+                        <h2>{head-title}</h2>
+                        {ifPhone} <div class="bcb-btn">
+                            <a href="{phone-button}"><button class="button-{rand_1-5}">  <span>{text_order_btn}</span> </button></a>
+                            </div>{endPhone}
+                    </div>
+                    <div class="bcb-header-img">
+                        <img src="bg/{vector_bg_1}" alt="">
+                    </div>
+                </div>
+            </div>
+            
+        </header>
+        {EndHeader}
+
+        <div class="r-upsides-stimuli-darkbg">
+            <div class="r-upsides-stimuli-opimg">
+                <div id="upside" class="mainbox upsides-block">
+                    <div class="upsides-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q32 0 62-6t58-17l60 61q-41 20-86 31t-94 11Zm280-80v-120H640v-80h120v-120h80v120h120v80H840v120h-80ZM424-296 254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg>
+                        <h2>{benefit-title}</h2>
+                    </div>
+                    <div class="upsides-list">
+                        <div class="upsides-item card">
+                            <div class="upsides-item-overlay"></div>
+                            <div class="upsides-item-circle">
+                                <img src="images/{benefits_img_1}" alt="">
+                            </div>
+                            <p>{benefit1}</p>
+                        </div>
+                        <div class="upsides-item card">
+                            <div class="upsides-item-overlay"></div>
+                            <div class="upsides-item-circle">
+                                <img src="images/{benefits_img_2}" alt="">
+                            </div>
+                            <p>{benefit2}</p>
+                        </div>
+                        <div class="upsides-item card">
+                            <div class="upsides-item-overlay"></div>
+                            <div class="upsides-item-circle">
+                                <img src="images/{benefits_img_3}" alt="">
+                            </div>
+                            <p>{benefit3}</p>
+                        </div>
+                        <div class="upsides-item card">
+                            <div class="upsides-item-overlay"></div>
+                            <div class="upsides-item-circle">
+                                <img src="images/{benefits_img_4}" alt="">
+                            </div>
+                            <p>{benefit4}</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="mainbox stimuli-box {rand_class_1}">
+                    <div class="stimuli-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M660-570q-25 0-42.5-17.5T600-630q0-25 17.5-42.5T660-690q25 0 42.5 17.5T720-630q0 25-17.5 42.5T660-570Zm-360 0q-25 0-42.5-17.5T240-630q0-25 17.5-42.5T300-690q25 0 42.5 17.5T360-630q0 25-17.5 42.5T300-570Zm180 110q-25 0-42.5-17.5T420-520q0-25 17.5-42.5T480-580q25 0 42.5 17.5T540-520q0 25-17.5 42.5T480-460Zm0-220q-25 0-42.5-17.5T420-740q0-25 17.5-42.5T480-800q25 0 42.5 17.5T540-740q0 25-17.5 42.5T480-680Zm0 520q-20 0-40.5-3t-39.5-8v-143q0-35 23.5-60.5T480-400q33 0 56.5 25.5T560-314v143q-19 5-39.5 8t-40.5 3Zm-140-32q-20-8-38.5-18T266-232q-28-20-44.5-52T205-352q0-26-5.5-48.5T180-443q-10-13-37.5-39.5T92-532q-11-11-11-28t11-28q11-11 28-11t28 11l153 145q20 18 29.5 42.5T340-350v158Zm280 0v-158q0-26 10-51t29-42l153-145q12-11 28.5-11t27.5 11q11 11 11 28t-11 28q-23 23-50.5 49T780-443q-14 20-19.5 42.5T755-352q0 36-16.5 68.5T693-231q-16 11-34.5 21T620-192Z"/></svg>
+                        <h2>{reasons-title}</h2>
+                    </div>
+                    <div class="stimuli-list">
+                        <div class="stimuli-item">
+                            <div class="stimuli-item-media">
+                                <img src="gallery/{gallery_img_1}" alt="">
+                            </div>
+                            <div class="stimuli-item-data">
+                                <div class="stimuli-item-dec">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M800-520q-17 0-28.5-11.5T760-560q0-17 11.5-28.5T800-600q17 0 28.5 11.5T840-560q0 17-11.5 28.5T800-520Zm-40-120v-200h80v200h-80ZM360-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Zm80-80h480v-32q0-11-5.5-20T580-306q-54-27-109-40.5T360-360q-56 0-111 13.5T140-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T440-640q0-33-23.5-56.5T360-720q-33 0-56.5 23.5T280-640q0 33 23.5 56.5T360-560Zm0-80Zm0 400Z"/></svg>
+                                </div>
+                                <p>{reasons1}</p>
+                            </div>
+                        </div>
+                        <div class="stimuli-item">
+                            <div class="stimuli-item-data">
+                                <p>{reasons2}</p>
+                                <div class="stimuli-item-dec">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m105-233-65-47 200-320 120 140 160-260 109 163q-23 1-43.5 5.5T545-539l-22-33-152 247-121-141-145 233ZM863-40 738-165q-20 14-44.5 21t-50.5 7q-75 0-127.5-52.5T463-317q0-75 52.5-127.5T643-497q75 0 127.5 52.5T823-317q0 26-7 50.5T795-221L920-97l-57 57ZM643-217q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Zm89-320q-19-8-39.5-13t-42.5-6l205-324 65 47-188 296Z"/></svg>                        
+                                </div>
+                            </div>
+                            <div class="stimuli-item-media">
+                                <img src="gallery/{gallery_img_2}" alt="">
+                            </div>
+                        </div>
+                        <div class="stimuli-item">
+                            <div class="stimuli-item-media">
+                                <img src="gallery/{gallery_img_3}" alt="">
+                            </div>
+                            <div class="stimuli-item-data">
+                                <div class="stimuli-item-dec">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880h40v331q18 11 29 28.5t11 40.5q0 33-23.5 56.5T480-400q-33 0-56.5-23.5T400-480q0-23 11-41t29-28v-86q-52 14-86 56.5T320-480q0 66 47 113t113 47q66 0 113-47t47-113q0-36-14.5-66.5T586-600l57-57q35 33 56 78.5t21 98.5q0 100-70 170t-170 70q-100 0-170-70t-70-170q0-90 57-156.5T440-717v-81q-119 15-199.5 105T160-480q0 134 93 227t227 93q134 0 227-93t93-227q0-69-27-129t-74-104l57-57q57 55 90.5 129.5T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg>                       
+                                 </div>
+                                <p>{reasons3}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {ifService}<div class="mainbox service-offerings-section">
+            <div class="service-offerings-title">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M221-120q-27 0-48-16.5T144-179L42-549q-5-19 6.5-35T80-600h190l176-262q5-8 14-13t19-5q10 0 19 5t14 13l176 262h192q20 0 31.5 16t6.5 35L816-179q-8 26-29 42.5T739-120H221Zm-1-80h520l88-320H132l88 320Zm260-80q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM367-600h225L479-768 367-600Zm113 240Z"/></svg>
+                <h2>{menu-type-title}</h2>
+            </div>
+            <div class="service-offerings-list">
+                {startContent-1}<div class="serv-offer-item" style="background-image: url({page-images-1});">
+                    <div class="serv-offer-stat">
+                        <div class="serv-offer-stat-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+                        <span>{random-num-1}</span>
+                        </div>
+                    </div>
+                    <p class="serv-offer-item-title">
+                        {page-title-1}
+                    </p>
+                    <div class="serv-offer-item-content">
+                        {page-content-1}
+                        <div class="serv-offer-item-btn">
+                            <a href="{page-link-2}"> <button class="button-{rand_1-5}"> {read-more}</button></a>                                    
+                        </div>
+                    </div>
+                </div>{endContent-1}
+                {startContent-2}<div class="serv-offer-item" style="background-image: url({page-images-2});">
+                    <div class="serv-offer-stat">
+                        <div class="serv-offer-stat-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+                        <span>{random-num-2}</span>
+                        </div>
+                    </div>
+                    <p class="serv-offer-item-title">
+                        {page-title-2}
+                    </p>
+                    <div class="serv-offer-item-content">
+                        {page-content-2}
+                        <div class="serv-offer-item-btn">
+                            <a href="{page-link-2}"> <button class="button-{rand_1-5}"> {read-more}</button></a>                                    
+                        </div>
+                    </div>
+                </div>{endContent-2}
+                {startContent-3}<div class="serv-offer-item" style="background-image: url({page-images-3});">
+                    <div class="serv-offer-stat">
+                        <div class="serv-offer-stat-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+                        <span>{random-num-3}</span>
+                        </div>
+                    </div>
+                    <p class="serv-offer-item-title">
+                        {page-title-3}
+                    </p>
+                    <div class="serv-offer-item-content">
+                        {page-content-3}
+                        <div class="serv-offer-item-btn">
+                            <a href="{page-link-2}"> <button class="button-{rand_1-5}"> {read-more}</button></a>                                    
+                        </div>
+                    </div>
+                </div>{endContent-3}
+                {startContent-4}<div class="serv-offer-item" style="background-image: url({page-images-4});">
+                    <div class="serv-offer-stat">
+                        <div class="serv-offer-stat-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+                        <span>{random-num-4}</span>
+                        </div>
+                    </div>
+                    <p class="serv-offer-item-title">
+                        {page-title-4}
+                    </p>
+                    <div class="serv-offer-item-content">
+                        {page-content-4}
+                        <div class="serv-offer-item-btn">
+                            <a href="{page-link-2}"> <button class="button-{rand_1-5}"> {read-more}</button></a>                                    
+                        </div>
+                    </div>
+                </div>{endContent-4}
+            </div>
+        </div>{endService}
+
+        <div class="mainbox single-prod-sect">
+            <div class="single-prod-wrapper">
+                <div class="single-prod-title">
+                    <h2>  {title}</h2>
+                </div>
+                <div class="single-prod-img">
+                    <img class="" src=" {images}" alt="{alt-images}">
+                </div>
+                <div class="single-prod-content">
+                    <div class="single-prod-txt">
+                        {content}
+                    </div>
+                    <div class="single-prod-price">
+                        {ifPrice}<p class="">{price_title} {price}{currency}</p>{endPrice}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="our-metrics-bg">
+            <div class="our-metrics-overlay">
+                <div class="mainbox our-metrics">
+                    <div class="our-metrics-title {rand_class_2}">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M80-120v-80h800v80H80Zm40-120v-280h120v280H120Zm200 0v-480h120v480H320Zm200 0v-360h120v360H520Zm200 0v-600h120v600H720Z"/></svg>
+                        <h2>{title_stats}</h2>
+                    </div>
+                    <div class="our-metrics-data-wrapper">
+                        <div class="our-metrics-txt">
+                            {title_stats_text}
+                        </div>
+                        <div class="our-metrics-list">
+                            <div class="our-metric-item">
+                                <div class="our-metric-item-data">
+                                    <span>+{rating-num-1}</span>
+                                    <h5>{stats1}</h5>
+                                </div>
+                            </div>
+                            <div class="our-metric-item">
+                                <div class="our-metric-item-data">
+                                    <span>+{rating-num-2}</span>
+                                    <h5>{stats2}</h5>
+                                </div>
+                            </div>
+                            <div class="our-metric-item">
+                                <div class="our-metric-item-data">
+                                    <span>+{rating-num-3}</span>
+                                    <h5>{stats3}</h5>
+                                </div>
+                            </div>
+                            <div class="our-metric-item">
+                                <div class="our-metric-item-data">
+                                    <span>+{rating-num-4}</span>
+                                    <h5>{stats4}</h5>
+                                </div>
+                            </div>
+                            <div class="our-metric-item">
+                                <div class="our-metric-item-data">
+                                    <span>+{rating-num-5}</span>
+                                    <h5>{stats5}</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {ifArticles}<div class="posts-section">
+            <div class="posts-section-imgdec">
+                <img src="bg/{vector_bg_2}" alt="">
+            </div>
+            <div class="mainbox">
+                <div class="posts-section-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h360v80H200v560h560v-360h80v360q0 33-23.5 56.5T760-120H200Zm120-160v-80h320v80H320Zm0-120v-80h320v80H320Zm0-120v-80h320v80H320Zm360-80v-80h-80v-80h80v-80h80v80h80v80h-80v80h-80Z"/></svg>
+                    <h2>{menu-type-title}</h2>
+                </div>
+                <div class="posts-list">
+                    {startContent-1}<div class="post-list-item">
+                        <a href="{page-link-1}" class="post-link">
+                            <div class="post-card">
+                                <div class="post-card-content">
+                                    <div class="post-card-img">
+                                        <img src="{page-images-1}" alt="{alt-images}">
+                                    </div>
+                                    <div class="post-card-text">
+                                        <h6>{page-title-1}</h6>
+                                        <p>{page-content-1}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>{endContent-1}
+                    {startContent-2}<div class="post-list-item">
+                        <a href="{page-link-2}" class="post-link">
+                            <div class="post-card">
+                                <div class="post-card-content">
+                                    <div class="post-card-img">
+                                        <img src="{page-images-2}" alt="{alt-images}">
+                                    </div>
+                                    <div class="post-card-text">
+                                        <h6>{page-title-2}</h6>
+                                        <p>{page-content-2}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>{endContent-2}
+                    {startContent-3}<div class="post-list-item">
+                        <a href="{page-link-3}" class="post-link">
+                            <div class="post-card">
+                                <div class="post-card-content">
+                                    <div class="post-card-img">
+                                        <img src="{page-images-3}" alt="{alt-images}">
+                                    </div>
+                                    <div class="post-card-text">
+                                        <h6>{page-title-3}</h6>
+                                        <p>{page-content-3}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>{endContent-3}
+                    {startContent-4}<div class="post-list-item">
+                        <a href="{page-link-4}" class="post-link">
+                            <div class="post-card">
+                                <div class="post-card-content">
+                                    <div class="post-card-img">
+                                        <img src="{page-images-4}" alt="{alt-images}">
+                                    </div>
+                                    <div class="post-card-text">
+                                        <h6>{page-title-4}</h6>
+                                        <p>{page-content-4}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>{endContent-4}
+                </div>
+            </div>
+        </div>{endArticles}
+
+        <div class="our-workflow-form-bg">
+            <div class="our-workflow-form-opimg">
+                <div class="mainbox our-workflow-form">
+                    <div class="our-workflow">
+                        <h2 class="our-workflow-title">{how-work-title}</h2>
+                        <div class="our-workflow-list {rand_class_3}">
+                            <div class="our-workflow-item">
+                                <div class="our-workflow-item-wrapper">
+                                    <img src="bg/{vector_bg_3}" alt="">
+                                    <p>{how-work-item1}</p>
+                                </div>
+                            </div>
+                            <div class="our-workflow-item">
+                                <div class="our-workflow-item-wrapper">
+                                    <img src="bg/{vector_bg_4}" alt="">
+                                    <p>{how-work-item2}</p>
+                                </div>
+                            </div>
+                            <div class="our-workflow-item">
+                                <div class="our-workflow-item-wrapper">
+                                    <img src="bg/{vector_bg_5}" alt="">
+                                    <p>{how-work-item3}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hp-form-box">
+                        <div class="hp-form-box-bgimg"></div>
+                        {ifForm}<div class="hp-form-body-wrapper">
+                            <h4 class="hp-form-title">{formtext}</h4>
+                            <form class="form-body" action="{thx-page}">
+                                {form-field}
+                                <div class="hp-form-checker">
+                                    <input type="checkbox" class="" id="exampleCheck1"  required="required">
+                                    <label class="" for="exampleCheck1">{checkaccept} <a href="{privacy-link}" class="check">{privacy}</a></label>
+                                </div>
+                                <div class="">
+                                    <button class="button-{rand_number_5}">{text_order_btn}</button>
+                                </div>
+                            </form>
+                        </div>{endForm}  
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        {Footer}
+        
+        <footer class="footer-area-bg">
+            <div class="mainbox footer-area">
+                <div class="footer-area-row logo-row" style="justify-content: space-around; flex-direction: {flex_direction_noboot_row};">
+                    <div class="footer-area-phrase">
+                        <p>Copyright © {current_year} {site-title}</p>
+                    </div>
+                    <div class="footer-area-logo">
+                        <a href="./"> <img src="{logo_img}"  alt="">
+                            <h3>{site-title}</h3>
+                        </a>
+                    </div>
+                    <div class="footer-area-wa-btn" >
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M414.73 97.1A222.14 222.14 0 00256.94 32C134 32 33.92 131.58 33.87 254a220.61 220.61 0 0029.78 111L32 480l118.25-30.87a223.63 223.63 0 00106.6 27h.09c122.93 0 223-99.59 223.06-222A220.18 220.18 0 00414.73 97.1zM256.94 438.66h-.08a185.75 185.75 0 01-94.36-25.72l-6.77-4-70.17 18.32 18.73-68.09-4.41-7A183.46 183.46 0 0171.53 254c0-101.73 83.21-184.5 185.48-184.5a185 185 0 01185.33 184.64c-.04 101.74-83.21 184.52-185.4 184.52zm101.69-138.19c-5.57-2.78-33-16.2-38.08-18.05s-8.83-2.78-12.54 2.78-14.4 18-17.65 21.75-6.5 4.16-12.07 1.38-23.54-8.63-44.83-27.53c-16.57-14.71-27.75-32.87-31-38.42s-.35-8.56 2.44-11.32c2.51-2.49 5.57-6.48 8.36-9.72s3.72-5.56 5.57-9.26.93-6.94-.46-9.71-12.54-30.08-17.18-41.19c-4.53-10.82-9.12-9.35-12.54-9.52-3.25-.16-7-.2-10.69-.2a20.53 20.53 0 00-14.86 6.94c-5.11 5.56-19.51 19-19.51 46.28s20 53.68 22.76 57.38 39.3 59.73 95.21 83.76a323.11 323.11 0 0031.78 11.68c13.35 4.22 25.5 3.63 35.1 2.2 10.71-1.59 33-13.42 37.63-26.38s4.64-24.06 3.25-26.37-5.11-3.71-10.69-6.48z" fill-rule="evenodd"/></svg>
+                        <a href="https://wa.me/{phone}"> &nbsp Whatsapp</a>
+                    </div>
+                </div>
+                <div class="footer-area-dec"></div>
+                <div class="footer-area-row">
+                    <div class="footer-area-nav">
+                        <a class="footer-area-link" href="./"> 
+                            {home_page}
+                        </a>
+                        <a class="footer-area-link" href="{aboutus_link}"> 
+                            {aboutus_title}
+                        </a>
+                        <a class="footer-area-link" href="./#upside"> 
+                            {benefit-title}
+                        </a>
+                        <a class="footer-area-link" href="{contacts_link}">
+                            {contacts_title}
+                        </a>
+                    </div>
+                    <div class="footer-area-nav">
+                        <a class="footer-area-link" href="{privacy-link}">
+                            {privacy}
+                        </a>
+                        <a class="footer-area-link" href="{term-link}">
+                            {term}
+                        </a>
+                        <a class="footer-area-link" href="{pay-link}">
+                            {pay-delivery-title}
+                        </a>
+                    </div>
+                    <div class="footer-area-decimg">
+                        <img src="bg/{vector_bg_6}" alt="">
+                    </div>
+                </div>
+            </div>
+         
+
+        </footer>
+
+
+        {cookies-code}
+
+
+        {EndFooter}
+
+
+    
+
+
+
+
+        {before_body}
+    </body>
+   
+</html>
+{after_html}
